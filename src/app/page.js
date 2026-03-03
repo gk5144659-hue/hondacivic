@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 
 const generations = [
   {
@@ -269,10 +270,18 @@ export default function Home() {
     {/* Social */}
     <div>
       <h4 className="text-white font-semibold mb-4">Follow Us</h4>
-      <div className="flex space-x-4 text-sm">
-        <span className="hover:text-honda-red transition cursor-pointer">Instagram</span>
-        <span className="hover:text-honda-red transition cursor-pointer">YouTube</span>
-        <span className="hover:text-honda-red transition cursor-pointer">Twitter</span>
+      <div className="flex space-x-4 text-xl">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="hover:text-honda-red transition cursor-pointer" />
+        </a>
+
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+          <FaYoutube className="hover:text-honda-red transition cursor-pointer" />
+        </a>
+
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+          <FaTwitter className="hover:text-honda-red transition cursor-pointer" />
+        </a>
       </div>
     </div>
 
