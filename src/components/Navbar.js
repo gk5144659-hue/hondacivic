@@ -49,7 +49,7 @@ export default function Navbar() {
           <Link href="/" className={`${linkClass("/")} hover:underline`}>Home</Link>
           <Link href="/legacy" className={`${linkClass("/legacy")} hover:underline `}>Legacy</Link>
           <Link href="/configurator" className={`${linkClass("/configurator")} hover:underline`}>Configurator</Link>
-          <Link href="/gallery" className={`${linkClass("/gallery")} hover:ubderline`}>Gallery</Link>
+          <Link href="/gallery" className={`${linkClass("/gallery")} hover:underline`}>Gallery</Link>
         </div>
 
 

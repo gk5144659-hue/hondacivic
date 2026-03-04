@@ -6,6 +6,17 @@ import { FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 
 export default function HondaPage() {
   const [color, setColor] = useState ("red");
+  const [submitted, setsubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setsubmitted(true);
+    e.target.reset();
+
+    setTimeout(() => {
+      setsubmitted(false);
+    }, 3000);
+  };
 
   const carImage=
   color === "red"
@@ -95,8 +106,8 @@ export default function HondaPage() {
             <h2 className="text-2xl sm:text-3xl font-bold mb-6">
               Book Test Drive
             </h2>
-
-            <form className="max-w-md mx-auto space-y-4">
+          <div>
+            <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
                 <input 
                   type="text"
                   placeholder="Your Name"
@@ -115,6 +126,12 @@ export default function HondaPage() {
                     Submit
                 </button>
             </form>
+            {submitted && (
+              <p className="text-green-500 text-center mt-4">
+                ✅ Form submit ho gaya!
+              </p>
+            )}
+          </div>
         </section>
               <footer className="bg-zinc-950 text-gray-400 px-6 py-16 border-t border-white/10">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -172,15 +189,15 @@ export default function HondaPage() {
                     <h4 className="text-white font-semibold mb-4">Follow Us</h4>
                     <div className="flex space-x-4 text-xl">
                       <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                        <FaInstagram className="hover:text-honda-red transition cursor-pointer" />
+                        <FaInstagram className="transition-all duration-300 hover:text-[#ea447b] group-hover:scale-110" />
                       </a>
 
                       <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-                        <FaYoutube className="hover:text-honda-red transition cursor-pointer" />
+                        <FaYoutube className="hover:text-red-600 transition cursor-pointer" />
                       </a>
 
                       <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                        <FaTwitter className="hover:text-honda-red transition cursor-pointer" />
+                        <FaTwitter className="hover:text-blue-600 transition cursor-pointer" />
                       </a>
                     </div>
                   </div>

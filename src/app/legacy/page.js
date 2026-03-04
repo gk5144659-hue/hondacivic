@@ -148,15 +148,15 @@ export default function Legacy() {
               <h4 className="text-white font-semibold mb-4">Follow Us</h4>
               <div className="flex space-x-4 text-xl">
                 <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                  <FaInstagram className="hover:text-honda-red transition cursor-pointer" />
+                  <FaInstagram className="transition-all duration-300 hover:text-[#ea447b] group-hover:scale-110" />
                 </a>
 
                 <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-                  <FaYoutube className="hover:text-honda-red transition cursor-pointer" />
+                  <FaYoutube className="hover:text-red-600 transition cursor-pointer" />
                 </a>
 
                 <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                  <FaTwitter className="hover:text-honda-red transition cursor-pointer" />
+                  <FaTwitter className="hover:text-blue-600 transition cursor-pointer" />
                 </a>
               </div>
             </div>
