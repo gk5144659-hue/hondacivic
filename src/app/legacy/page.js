@@ -38,7 +38,7 @@ const generations = [
     name: "Honda NSX (New Model)",
     year: "2016-2022",
     power: "573 HP",
-    image: "https://i.ytimg.com/vi/a-EbsyJBceo/sddefault.jpg?v=676479d3",
+    image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Honda/NSX/1382/1594631340840/front-left-side-47.jpg",
   },
     {
     name: "Acura NSX",

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function OldModel() {
+export default function NewModel() {
   return (
     <div className="min-h-screen bg-black text-white py-12 px-4 sm:px-6 lg:px-12">
       

@@ -13,7 +13,7 @@ function Model() {
   return (
     <primitive 
       object={scene} 
-      scale={2.5} 
+      scale={3} 
       position={[0, 0.2, 0]}
     />
   );
@@ -29,7 +29,7 @@ export default function CarModel() {
 
         <pointLight 
           position={[0, 0, 0]}
-          color="red" 
+          color="red"
           intensity={6} 
           distance={5}
         />
