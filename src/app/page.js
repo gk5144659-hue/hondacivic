@@ -275,7 +275,7 @@ export default function Home() {
                   <FaInstagram className="transition-all duration-300 hover:text-[#e46bb8] group-hover:scale-110" />
                 </a>
 
-                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://youtu.be/ydAqbMDEYmU?si=7_jYprixIIOb8a04" target="_blank" rel="noopener noreferrer">
                   <FaYoutube className="hover:text-red-600 transition cursor-pointer" />
                 </a>
 
